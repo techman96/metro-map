@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Interactive metro maps of cities, showing lines and stations."
+    />
+
+    <title>Metro Maps</title>
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div class="app-titles">
+        <h1>Metro Maps</h1>
+        <p id="city-subtitle" class="city-subtitle"></p>
+      </div>
+
+      <div class="city-picker">
+        <label for="city-select">City</label>
+        <select id="city-select"></select>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div id="map" class="map"></div>
+      <aside id="legend" class="legend" aria-label="Metro lines"></aside>
+    </main>
+
+    <footer class="app-footer">
+      <p id="data-source"></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
