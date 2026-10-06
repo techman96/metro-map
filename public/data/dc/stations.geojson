@@ -1,0 +1,2789 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.89411014999996, 38.88675561000008]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "NAME": "Addison Road-Seat Pleasant",
+        "ADDRESS": "100 ADDISON ROAD S., CAPITOL HEIGHTS, MD",
+        "LINE": "blue, silver",
+        "latitude": 38.886755610000002,
+        "longitude": -76.894110150000003,
+        "station": "Addison Road",
+        "lat": 38.887599999999999,
+        "lon": -76.895700000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 7.1600000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 899,
+        "median_avm": 438501,
+        "p25_avm": 385954,
+        "p75_avm": 473016,
+        "mm": 43.850099999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.99537300999998, 38.86297090000005]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "NAME": "Anacostia",
+        "ADDRESS": "1101 HOWARD ROAD SE, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.862970900000001,
+        "longitude": -76.995373009999994,
+        "station": "Anacostia",
+        "lat": 38.862499999999997,
+        "lon": -76.995400000000004,
+        "zone": "inner",
+        "dist_from_center_mi": 3.04,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 463,
+        "median_avm": 532874,
+        "p25_avm": 438004.5,
+        "p75_avm": 633482.5,
+        "mm": 53.287399999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.021916669999939, 38.893673010000043]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "NAME": "Archives-Navy Memorial-Penn Quarter",
+        "ADDRESS": "300 7TH STREET NW, WASHINGTON, DC",
+        "LINE": "green, yellow",
+        "latitude": 38.893673010000001,
+        "longitude": -77.021916669999996,
+        "station": "Archives-Navy Memorial",
+        "lat": 38.893000000000001,
+        "lon": -77.022000000000006,
+        "zone": "inner",
+        "dist_from_center_mi": 0.48999999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1366,
+        "median_avm": 235249,
+        "p25_avm": 226813,
+        "p75_avm": 512337,
+        "mm": 23.524899999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.062812429999951, 38.884694640000077]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "NAME": "Arlington Cemetery",
+        "ADDRESS": "1000 NORTH MEMORIAL DRIVE, ARLINGTON, VA",
+        "LINE": "blue",
+        "latitude": 38.884694639999999,
+        "longitude": -77.062812429999994,
+        "station": "Arlington Cemetery",
+        "lat": 38.884999999999998,
+        "lon": -77.070700000000002,
+        "zone": "inner",
+        "dist_from_center_mi": 2.4700000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 834,
+        "median_avm": 568115.5,
+        "p25_avm": 457862,
+        "p75_avm": 724148,
+        "mm": 56.811549999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.49153943999994, 39.00529079000006]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "NAME": "Ashburn",
+        "ADDRESS": "43625-A CROSON LN, ASHBURN, VA 20147",
+        "LINE": "silver",
+        "latitude": 39.005290789999997,
+        "longitude": -77.491539439999997,
+        "station": "Ashburn",
+        "lat": 39.004300000000001,
+        "lon": -77.485799999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 25.66,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 8,
+        "median_avm": 3952690.5,
+        "p25_avm": 679826,
+        "p75_avm": 4524639.5,
+        "mm": 395.26909999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.113171149999971, 38.882190650000041]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "NAME": "Ballston-MU",
+        "ADDRESS": "4230 FAIRFAX DRIVE, ARLINGTON, VA",
+        "LINE": "orange, silver",
+        "latitude": 38.882190649999998,
+        "longitude": -77.113171149999999,
+        "station": "Ballston-MU",
+        "lat": 38.882199999999997,
+        "lon": -77.111800000000002,
+        "zone": "inner",
+        "dist_from_center_mi": 4.6399999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 5912,
+        "median_avm": 597249,
+        "p25_avm": 487074,
+        "p75_avm": 903886.5,
+        "mm": 59.724899999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.938367129999961, 38.890983460000029]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "NAME": "Benning Road",
+        "ADDRESS": "4500 CENTRAL AVENUE NE, WASHINGTON, DC",
+        "LINE": "blue, silver",
+        "latitude": 38.890983460000001,
+        "longitude": -76.938367130000003,
+        "station": "Benning Road",
+        "lat": 38.889699999999998,
+        "lon": -76.937600000000003,
+        "zone": "inner",
+        "dist_from_center_mi": 4.9000000000000004,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1705,
+        "median_avm": 474916,
+        "p25_avm": 408061,
+        "p75_avm": 538590,
+        "mm": 47.491599999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.094131499999946, 38.984401460000072]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "NAME": "Bethesda",
+        "ADDRESS": "7450 WISCONSIN AVENUE, BETHESDA, MD",
+        "LINE": "red",
+        "latitude": 38.984401460000001,
+        "longitude": -77.094131500000003,
+        "station": "Bethesda",
+        "lat": 38.984499999999997,
+        "lon": -77.093999999999994,
+        "zone": "outer",
+        "dist_from_center_mi": 6.9299999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2307,
+        "median_avm": 460390,
+        "p25_avm": 315023,
+        "p75_avm": 1335409.5,
+        "mm": 46.039000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.053669859999957, 38.814151440000046]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "NAME": "Braddock Road",
+        "ADDRESS": "700 N. WEST ST., ALEXANDRIA, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.814151440000003,
+        "longitude": -77.053669859999999,
+        "station": "Braddock Road",
+        "lat": 38.812600000000003,
+        "lon": -77.054299999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 6.0899999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2600,
+        "median_avm": 576045,
+        "p25_avm": 433888.5,
+        "p75_avm": 2276730.5,
+        "mm": 57.604500000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.911466459999986, 38.826454120000051]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "NAME": "Branch Ave",
+        "ADDRESS": "4704 OLD SOPER ROAD, SUITLAND, MD",
+        "LINE": "green",
+        "latitude": 38.826454120000001,
+        "longitude": -76.91146646,
+        "station": "Branch Ave",
+        "lat": 38.8264,
+        "lon": -76.912199999999999,
+        "zone": "outer",
+        "dist_from_center_mi": 7.9699999999999998,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 986,
+        "median_avm": 344391,
+        "p25_avm": 333031,
+        "p75_avm": 404091,
+        "mm": 34.439100000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.994536559999972, 38.933218790000069]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "NAME": "Brookland-CUA",
+        "ADDRESS": "890 MONROE STREET NE, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.933218789999998,
+        "longitude": -76.99453656,
+        "station": "Brookland-CUA",
+        "lat": 38.933399999999999,
+        "lon": -76.995000000000005,
+        "zone": "inner",
+        "dist_from_center_mi": 3.0099999999999998,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 959,
+        "median_avm": 613631,
+        "p25_avm": 487458,
+        "p75_avm": 728174,
+        "mm": 61.363100000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.911810359999947, 38.88947365000007]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "NAME": "Capitol Heights",
+        "ADDRESS": "133 CENTRAL AVENUE, CAPITOL HEIGHTS, MD",
+        "LINE": "blue, silver",
+        "latitude": 38.889473649999999,
+        "longitude": -76.911810360000004,
+        "station": "Capitol Heights",
+        "lat": 38.889299999999999,
+        "lon": -76.912300000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 6.2599999999999998,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1219,
+        "median_avm": 438908,
+        "p25_avm": 383417.5,
+        "p75_avm": 508082.5,
+        "mm": 43.890799999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.005141699999967, 38.885070280000036]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "NAME": "Capitol South",
+        "ADDRESS": "355 1ST STREET SE, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.885070280000001,
+        "longitude": -77.005141699999996,
+        "station": "Capitol South",
+        "lat": 38.884900000000002,
+        "lon": -77.004999999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 1.55,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 805,
+        "median_avm": 502216,
+        "p25_avm": 434877,
+        "p75_avm": 702147,
+        "mm": 50.221600000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.916630299999952, 38.916639650000036]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "NAME": "Cheverly",
+        "ADDRESS": "5501 COLUMBIA PARK, CHEVERLY, MD",
+        "LINE": "orange",
+        "latitude": 38.91663965,
+        "longitude": -76.916630299999994,
+        "station": "Cheverly",
+        "lat": 38.899900000000002,
+        "lon": -76.9178,
+        "zone": "outer",
+        "dist_from_center_mi": 5.9299999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1716,
+        "median_avm": 451551,
+        "p25_avm": 396008.25,
+        "p75_avm": 511768.75,
+        "mm": 45.155099999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.095396409999978, 38.886712620000026]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "NAME": "Clarendon",
+        "ADDRESS": "3100 WILSON BLVD, ARLINGTON, VA",
+        "LINE": "orange, silver",
+        "latitude": 38.886712619999997,
+        "longitude": -77.095396410000006,
+        "station": "Clarendon",
+        "lat": 38.886800000000001,
+        "lon": -77.095600000000005,
+        "zone": "inner",
+        "dist_from_center_mi": 3.7200000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3470,
+        "median_avm": 1868272,
+        "p25_avm": 636921,
+        "p75_avm": 2999825.25,
+        "mm": 186.8272
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.058044819999964, 38.934770680000042]
+      },
+      "properties": {
+        "OBJECTID": 16,
+        "NAME": "Cleveland Park",
+        "ADDRESS": "3514 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.93477068,
+        "longitude": -77.058044820000006,
+        "station": "Cleveland Park",
+        "lat": 38.934199999999997,
+        "lon": -77.058499999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 2.9700000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1934,
+        "median_avm": 577982.5,
+        "p25_avm": 535607.25,
+        "p75_avm": 1059201.5,
+        "mm": 57.798250000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.928127239999981, 38.978641440000047]
+      },
+      "properties": {
+        "OBJECTID": 17,
+        "NAME": "College Park-U of Md",
+        "ADDRESS": "4931 CALVERT ROAD, COLLEGE PARK, MD",
+        "LINE": "green",
+        "latitude": 38.978641439999997,
+        "longitude": -76.928127239999995,
+        "station": "College Park-U of MD",
+        "lat": 38.9786,
+        "lon": -76.927599999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 7.7400000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 440,
+        "median_avm": 572071,
+        "p25_avm": 513626,
+        "p75_avm": 634577.5,
+        "mm": 57.207099999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.032554409999989, 38.927845760000025]
+      },
+      "properties": {
+        "OBJECTID": 18,
+        "NAME": "Columbia Heights",
+        "ADDRESS": "3030 14TH STREET NW, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.927845759999997,
+        "longitude": -77.032554410000003,
+        "station": "Columbia Heights",
+        "lat": 38.928400000000003,
+        "lon": -77.032700000000006,
+        "zone": "inner",
+        "dist_from_center_mi": 2.0899999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3844,
+        "median_avm": 565789,
+        "p25_avm": 508798.5,
+        "p75_avm": 681927,
+        "mm": 56.578899999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.988514199999941, 38.845665480000036]
+      },
+      "properties": {
+        "OBJECTID": 19,
+        "NAME": "Congress Heights",
+        "ADDRESS": "1300 ALABAMA AVENUE SE, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.845665480000001,
+        "longitude": -76.988514199999997,
+        "station": "Congress Heights",
+        "lat": 38.845100000000002,
+        "lon": -76.995500000000007,
+        "zone": "inner",
+        "dist_from_center_mi": 4.0700000000000003,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 990,
+        "median_avm": 565970,
+        "p25_avm": 473161.25,
+        "p75_avm": 653920,
+        "mm": 56.597000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.087133539999968, 38.890183310000054]
+      },
+      "properties": {
+        "OBJECTID": 20,
+        "NAME": "Court House",
+        "ADDRESS": "2100 WILSON BLVD, ARLINGTON, VA",
+        "LINE": "orange, silver",
+        "latitude": 38.890183309999998,
+        "longitude": -77.087133539999996,
+        "station": "Court House",
+        "lat": 38.891199999999998,
+        "lon": -77.084599999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 3.0800000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3875,
+        "median_avm": 618160,
+        "p25_avm": 510308,
+        "p75_avm": 901109,
+        "mm": 61.816000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.050292099999979, 38.857912100000078]
+      },
+      "properties": {
+        "OBJECTID": 21,
+        "NAME": "Crystal City",
+        "ADDRESS": "1750 SOUTH CLARK ST., ARLINGTON, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.8579121,
+        "longitude": -77.050292099999993,
+        "station": "Crystal City",
+        "lat": 38.857599999999998,
+        "lon": -77.050600000000003,
+        "zone": "inner",
+        "dist_from_center_mi": 3.0600000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1070,
+        "median_avm": 679302,
+        "p25_avm": 603721,
+        "p75_avm": 831521.75,
+        "mm": 67.930199999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.935259039999949, 38.90818629000006]
+      },
+      "properties": {
+        "OBJECTID": 22,
+        "NAME": "Deanwood",
+        "ADDRESS": "4720 MINNESOTA AVENUE NE, WASHINGTON, DC",
+        "LINE": "orange",
+        "latitude": 38.908186290000003,
+        "longitude": -76.935259040000005,
+        "station": "Deanwood",
+        "lat": 38.893799999999999,
+        "lon": -76.936199999999999,
+        "zone": "inner",
+        "dist_from_center_mi": 4.9500000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1836,
+        "median_avm": 491331,
+        "p25_avm": 410679.25,
+        "p75_avm": 545954.75,
+        "mm": 49.133099999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.448150429999941, 38.955791780000027]
+      },
+      "properties": {
+        "OBJECTID": 23,
+        "NAME": "Dulles Airport",
+        "ADDRESS": "44920 SAARINEN CIR, DULLES, VA 20166",
+        "LINE": "silver",
+        "latitude": 38.955791779999998,
+        "longitude": -77.448150429999998,
+        "station": "Dulles Airport",
+        "lat": 38.953000000000003,
+        "lon": -77.4482,
+        "zone": "outer",
+        "dist_from_center_mi": 22.899999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 0,
+        "median_avm": null,
+        "p25_avm": null,
+        "p75_avm": null,
+        "mm": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.227163019999978, 38.883632910000074]
+      },
+      "properties": {
+        "OBJECTID": 24,
+        "NAME": "Dunn Loring-Merrifield",
+        "ADDRESS": "2700 GALLOWS ROAD, VIENNA, VA",
+        "LINE": "orange",
+        "latitude": 38.883632910000003,
+        "longitude": -77.227163020000006,
+        "station": "Dunn Loring-Merrifield",
+        "lat": 38.883699999999997,
+        "lon": -77.230999999999995,
+        "zone": "outer",
+        "dist_from_center_mi": 10.960000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 90,
+        "median_avm": 2529935.5,
+        "p25_avm": 2299747.25,
+        "p75_avm": 2750495.5,
+        "mm": 252.99359999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.043416649999983, 38.909605850000048]
+      },
+      "properties": {
+        "OBJECTID": 25,
+        "NAME": "Dupont Circle",
+        "ADDRESS": "1525 20TH STREET NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.909605849999998,
+        "longitude": -77.043416649999998,
+        "station": "Dupont Circle",
+        "lat": 38.909599999999998,
+        "lon": -77.043499999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 1.1399999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 6279,
+        "median_avm": 523048,
+        "p25_avm": 486040.5,
+        "p75_avm": 617030.5,
+        "mm": 52.3048
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.156885349999982, 38.885960940000075]
+      },
+      "properties": {
+        "OBJECTID": 26,
+        "NAME": "East Falls Church",
+        "ADDRESS": "2001 N. SYCAMORE ST., ARLINGTON, VA",
+        "LINE": "orange, silver",
+        "latitude": 38.885960939999997,
+        "longitude": -77.156885349999996,
+        "station": "East Falls Church",
+        "lat": 38.885100000000001,
+        "lon": -77.156400000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 6.96,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1678,
+        "median_avm": 2854965.5,
+        "p25_avm": 906562.75,
+        "p75_avm": 3226772,
+        "mm": 285.4966
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.99600339999995, 38.884630050000055]
+      },
+      "properties": {
+        "OBJECTID": 27,
+        "NAME": "Eastern Market",
+        "ADDRESS": "725 PENNSYLVANIA AVENUE SE, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.884630049999998,
+        "longitude": -76.996003400000006,
+        "station": "Eastern Market",
+        "lat": 38.884399999999999,
+        "lon": -76.996200000000002,
+        "zone": "inner",
+        "dist_from_center_mi": 1.97,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1087,
+        "median_avm": 473403,
+        "p25_avm": 424930.5,
+        "p75_avm": 572458.5,
+        "mm": 47.340299999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.070876679999969, 38.800433210000051]
+      },
+      "properties": {
+        "OBJECTID": 28,
+        "NAME": "Eisenhower Ave",
+        "ADDRESS": "2400 EISENHOWER AVENUE, ALEXANDRIA, VA",
+        "LINE": "yellow",
+        "latitude": 38.800433210000001,
+        "longitude": -77.070876679999998,
+        "station": "Eisenhower Ave",
+        "lat": 38.801200000000001,
+        "lon": -77.078000000000003,
+        "zone": "outer",
+        "dist_from_center_mi": 7.2300000000000004,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 168,
+        "median_avm": 502477.5,
+        "p25_avm": 409829.75,
+        "p75_avm": 980832.75,
+        "mm": 50.247750000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.039703119999956, 38.903209730000071]
+      },
+      "properties": {
+        "OBJECTID": 29,
+        "NAME": "Farragut North",
+        "ADDRESS": "1720 L STREET NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.90320973,
+        "longitude": -77.039703119999999,
+        "station": "Farragut North",
+        "lat": 38.903100000000002,
+        "lon": -77.039500000000004,
+        "zone": "inner",
+        "dist_from_center_mi": 0.69999999999999996,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3096,
+        "median_avm": 503185,
+        "p25_avm": 228064,
+        "p75_avm": 544217,
+        "mm": 50.3185
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.040697709999961, 38.901320680000026]
+      },
+      "properties": {
+        "OBJECTID": 30,
+        "NAME": "Farragut West",
+        "ADDRESS": "841 17TH STREET NW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.901320679999998,
+        "longitude": -77.040697710000003,
+        "station": "Farragut West",
+        "lat": 38.901000000000003,
+        "lon": -77.039900000000003,
+        "zone": "inner",
+        "dist_from_center_mi": 0.66000000000000003,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 614,
+        "median_avm": 497486,
+        "p25_avm": 241682,
+        "p75_avm": 557328,
+        "mm": 49.748600000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.015870499999949, 38.885080140000071]
+      },
+      "properties": {
+        "OBJECTID": 31,
+        "NAME": "Federal Center SW",
+        "ADDRESS": "401 3RD STREET SW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.885080139999999,
+        "longitude": -77.015870500000005,
+        "station": "Federal Center SW",
+        "lat": 38.884900000000002,
+        "lon": -77.015199999999993,
+        "zone": "inner",
+        "dist_from_center_mi": 1.1599999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1186,
+        "median_avm": 539558,
+        "p25_avm": 518666,
+        "p75_avm": 714930,
+        "mm": 53.955800000000004
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.028134279999961, 38.893188660000078]
+      },
+      "properties": {
+        "OBJECTID": 32,
+        "NAME": "Federal Triangle",
+        "ADDRESS": "350 12TH STREET NW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.89318866,
+        "longitude": -77.028134280000003,
+        "station": "Federal Triangle",
+        "lat": 38.893099999999997,
+        "lon": -77.028099999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 0.35999999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1128,
+        "median_avm": 237948,
+        "p25_avm": 227017,
+        "p75_avm": 515706.75,
+        "mm": 23.794799999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.050280029999954, 38.900705790000075]
+      },
+      "properties": {
+        "OBJECTID": 33,
+        "NAME": "Foggy Bottom-GWU",
+        "ADDRESS": "890 23RD STREET NW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.900705790000004,
+        "longitude": -77.050280029999996,
+        "station": "Foggy Bottom-GWU",
+        "lat": 38.900100000000002,
+        "lon": -77.049700000000001,
+        "zone": "inner",
+        "dist_from_center_mi": 1.1699999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3236,
+        "median_avm": 540910,
+        "p25_avm": 500065,
+        "p75_avm": 684786,
+        "mm": 54.091000000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.042918849999978, 39.014962080000032]
+      },
+      "properties": {
+        "OBJECTID": 34,
+        "NAME": "Forest Glen",
+        "ADDRESS": "9730 GEORGIA AVENUE, FOREST GLEN, MD",
+        "LINE": "red",
+        "latitude": 39.014962079999997,
+        "longitude": -77.042918850000007,
+        "station": "Forest Glen",
+        "lat": 39.014600000000002,
+        "lon": -77.037300000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 8.0500000000000007,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1404,
+        "median_avm": 1087655.5,
+        "p25_avm": 903714,
+        "p75_avm": 1229586.25,
+        "mm": 108.76560000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.002205359999948, 38.95185457000008]
+      },
+      "properties": {
+        "OBJECTID": 35,
+        "NAME": "Fort Totten",
+        "ADDRESS": "201 GALLOWAY STREET NE, WASHINGTON, DC",
+        "LINE": "red, green",
+        "latitude": 38.951854570000002,
+        "longitude": -77.002205360000005,
+        "station": "Fort Totten",
+        "lat": 38.951300000000003,
+        "lon": -76.999700000000004,
+        "zone": "inner",
+        "dist_from_center_mi": 3.9700000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1790,
+        "median_avm": 663158,
+        "p25_avm": 618189,
+        "p75_avm": 740595.75,
+        "mm": 66.315799999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.167972499999962, 38.766529650000052]
+      },
+      "properties": {
+        "OBJECTID": 36,
+        "NAME": "Franconia-Springfield",
+        "ADDRESS": "6880 FRONTIER DRIVE, SPRINGFIELD, VA",
+        "LINE": "blue",
+        "latitude": 38.766529650000003,
+        "longitude": -77.167972500000005,
+        "station": "Franconia-Springfield",
+        "lat": 38.766800000000003,
+        "lon": -77.150999999999996,
+        "zone": "outer",
+        "dist_from_center_mi": 11.24,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 447,
+        "median_avm": 458332,
+        "p25_avm": 437577,
+        "p75_avm": 562173,
+        "mm": 45.833199999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.084998109999958, 38.959491670000034]
+      },
+      "properties": {
+        "OBJECTID": 37,
+        "NAME": "Friendship Heights",
+        "ADDRESS": "5337 WISCONSIN AVENUE NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.959491669999998,
+        "longitude": -77.084998110000001,
+        "station": "Friendship Heights",
+        "lat": 38.960599999999999,
+        "lon": -77.085899999999995,
+        "zone": "outer",
+        "dist_from_center_mi": 5.3099999999999996,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2275,
+        "median_avm": 893441,
+        "p25_avm": 487105,
+        "p75_avm": 1214056.5,
+        "mm": 89.344099999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.021917669999937, 38.89832460000008]
+      },
+      "properties": {
+        "OBJECTID": 38,
+        "NAME": "Gallery Pl-Chinatown",
+        "ADDRESS": "625 9TH STREET NW, WASHINGTON, DC",
+        "LINE": "red, green, yellow",
+        "latitude": 38.898324600000002,
+        "longitude": -77.021917669999993,
+        "station": "Gallery Place",
+        "lat": 38.898600000000002,
+        "lon": -77.022000000000006,
+        "zone": "inner",
+        "dist_from_center_mi": 0.33000000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3632,
+        "median_avm": 346745,
+        "p25_avm": 235249,
+        "p75_avm": 624373,
+        "mm": 34.674500000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.023463189999973, 38.937442420000025]
+      },
+      "properties": {
+        "OBJECTID": 39,
+        "NAME": "Georgia Ave-Petworth",
+        "ADDRESS": "3750 GEORGIA AVENUE NW, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.937442420000004,
+        "longitude": -77.023463190000001,
+        "station": "Georgia Ave-Petworth",
+        "lat": 38.9392,
+        "lon": -77.024100000000004,
+        "zone": "inner",
+        "dist_from_center_mi": 2.8300000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1369,
+        "median_avm": 672362,
+        "p25_avm": 563647,
+        "p75_avm": 836527,
+        "mm": 67.236199999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.053559659999962, 39.061791580000033]
+      },
+      "properties": {
+        "OBJECTID": 40,
+        "NAME": "Glenmont",
+        "ADDRESS": "12501 GEORGIA AVENUE, SILVER SPRING, MD",
+        "LINE": "red",
+        "latitude": 39.061791579999998,
+        "longitude": -77.053559660000005,
+        "station": "Glenmont",
+        "lat": 39.058799999999998,
+        "lon": -77.059700000000007,
+        "zone": "outer",
+        "dist_from_center_mi": 11.220000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1787,
+        "median_avm": 764424,
+        "p25_avm": 730343,
+        "p75_avm": 837888.5,
+        "mm": 76.442400000000006
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.911059829999942, 39.011153670000056]
+      },
+      "properties": {
+        "OBJECTID": 41,
+        "NAME": "Greenbelt",
+        "ADDRESS": "5717 GREENBELT METRO DRIVE, GREENBELT, MD",
+        "LINE": "green",
+        "latitude": 39.011153669999999,
+        "longitude": -76.911059829999999,
+        "station": "Greenbelt",
+        "lat": 39.011600000000001,
+        "lon": -76.911299999999997,
+        "zone": "outer",
+        "dist_from_center_mi": 10.029999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 748,
+        "median_avm": 478844.5,
+        "p25_avm": 427761.5,
+        "p75_avm": 511278.25,
+        "mm": 47.884450000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.233880199999987, 38.920963180000058]
+      },
+      "properties": {
+        "OBJECTID": 42,
+        "NAME": "Greensboro",
+        "ADDRESS": "8305 LEESBURG PIKE VIENNA, VA 22182",
+        "LINE": "silver",
+        "latitude": 38.920963180000001,
+        "longitude": -77.233880200000002,
+        "station": "Greensboro",
+        "lat": 38.921799999999998,
+        "lon": -77.242599999999996,
+        "zone": "outer",
+        "dist_from_center_mi": 11.65,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 154,
+        "median_avm": 846587.5,
+        "p25_avm": 787274.25,
+        "p75_avm": 3574236,
+        "mm": 84.658749999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.103852039999936, 39.029276760000073]
+      },
+      "properties": {
+        "OBJECTID": 43,
+        "NAME": "Grosvenor-Strathmore",
+        "ADDRESS": "10300 ROCKVILLE PIKE, BETHESDA, MD",
+        "LINE": "red",
+        "latitude": 39.029276760000002,
+        "longitude": -77.103852040000007,
+        "station": "Grosvenor-Strathmore",
+        "lat": 39.029000000000003,
+        "lon": -77.110100000000003,
+        "zone": "outer",
+        "dist_from_center_mi": 10.050000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2448,
+        "median_avm": 299864,
+        "p25_avm": 286868,
+        "p75_avm": 396853,
+        "mm": 29.9864
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.385180409999975, 38.952828780000061]
+      },
+      "properties": {
+        "OBJECTID": 44,
+        "NAME": "Herndon",
+        "ADDRESS": "585-A HERNDON PKY, HERNDON, VA 20170",
+        "LINE": "silver",
+        "latitude": 38.952828779999997,
+        "longitude": -77.385180410000004,
+        "station": "Herndon",
+        "lat": 38.976999999999997,
+        "lon": -77.385300000000001,
+        "zone": "outer",
+        "dist_from_center_mi": 19.949999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 282,
+        "median_avm": 603146,
+        "p25_avm": 543849.5,
+        "p75_avm": 3398921.5,
+        "mm": 60.314599999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.075208079999982, 38.793923620000044]
+      },
+      "properties": {
+        "OBJECTID": 45,
+        "NAME": "Huntington",
+        "ADDRESS": "2701 HUNTINGTON AVENUE, ALEXANDRIA, VA",
+        "LINE": "yellow",
+        "latitude": 38.793923620000001,
+        "longitude": -77.075208079999996,
+        "station": "Huntington",
+        "lat": 38.794899999999998,
+        "lon": -77.073999999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 7.5599999999999996,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 89,
+        "median_avm": 634280,
+        "p25_avm": 379742,
+        "p75_avm": 730052,
+        "mm": 63.427999999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.415297419999945, 38.960765780000031]
+      },
+      "properties": {
+        "OBJECTID": 46,
+        "NAME": "Innovation Center",
+        "ADDRESS": "13747-A SUNRISE VALLEY DR, HERNDON, VA 20171",
+        "LINE": "silver",
+        "latitude": 38.960765780000003,
+        "longitude": -77.415297420000002,
+        "station": "Innovation Center",
+        "lat": 38.964300000000001,
+        "lon": -77.421300000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 21.620000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 14,
+        "median_avm": 3589081,
+        "p25_avm": 3452682.25,
+        "p75_avm": 3789468.75,
+        "mm": 358.90809999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.016641239999956, 38.896098100000074]
+      },
+      "properties": {
+        "OBJECTID": 47,
+        "NAME": "Judiciary Square",
+        "ADDRESS": "435 4TH STREET NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.896098100000003,
+        "longitude": -77.016641239999998,
+        "station": "Judiciary Square",
+        "lat": 38.896299999999997,
+        "lon": -77.016099999999994,
+        "zone": "inner",
+        "dist_from_center_mi": 0.66000000000000003,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2501,
+        "median_avm": 255113,
+        "p25_avm": 229386,
+        "p75_avm": 559369,
+        "mm": 25.511299999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.060813499999938, 38.806593880000037]
+      },
+      "properties": {
+        "OBJECTID": 48,
+        "NAME": "King St-Old Town",
+        "ADDRESS": "1900 KING STREET, ALEXANDRIA, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.806593880000001,
+        "longitude": -77.060813499999995,
+        "station": "King Street-Old Town",
+        "lat": 38.8063,
+        "lon": -77.061800000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 6.6100000000000003,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2189,
+        "median_avm": 590542,
+        "p25_avm": 492653,
+        "p75_avm": 922615,
+        "mm": 59.054200000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.021910769999977, 38.884845510000048]
+      },
+      "properties": {
+        "OBJECTID": 49,
+        "NAME": "L'Enfant Plaza",
+        "ADDRESS": "600 MARYLAND AVENUE SW, WASHINGTON, DC",
+        "LINE": "green, yellow, orange, blue, silver",
+        "latitude": 38.884845509999998,
+        "longitude": -77.021910770000005,
+        "station": "L'Enfant Plaza",
+        "lat": 38.884500000000003,
+        "lon": -77.022099999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 1.01,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1051,
+        "median_avm": 533784,
+        "p25_avm": 514435,
+        "p75_avm": 630033,
+        "mm": 53.378399999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.891200209999965, 38.933514030000026]
+      },
+      "properties": {
+        "OBJECTID": 50,
+        "NAME": "Landover",
+        "ADDRESS": "3000 PENNSY DRIVE, HYATTSVILLE, MD",
+        "LINE": "orange",
+        "latitude": 38.933514029999998,
+        "longitude": -76.891200209999994,
+        "station": "Landover",
+        "lat": 38.933300000000003,
+        "lon": -76.890299999999996,
+        "zone": "outer",
+        "dist_from_center_mi": 7.79,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 985,
+        "median_avm": 408115,
+        "p25_avm": 378686,
+        "p75_avm": 461042,
+        "mm": 40.811500000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.844533319999982, 38.900588250000055]
+      },
+      "properties": {
+        "OBJECTID": 51,
+        "NAME": "Largo Town Center",
+        "ADDRESS": null,
+        "LINE": "blue, silver",
+        "latitude": 38.900588249999998,
+        "longitude": -76.844533319999996,
+        "station": "Largo Town Center",
+        "lat": 38.900799999999997,
+        "lon": -76.849900000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 9.5800000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 423,
+        "median_avm": 310922,
+        "p25_avm": 279667,
+        "p75_avm": 321375,
+        "mm": 31.092199999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.210081289999948, 38.924529550000045]
+      },
+      "properties": {
+        "OBJECTID": 52,
+        "NAME": "McLean",
+        "ADDRESS": "1824 DOLLEY MADISON BOULIVARD MCLEAN, VA 22102",
+        "LINE": "silver",
+        "latitude": 38.924529550000003,
+        "longitude": -77.210081290000005,
+        "station": "McLean",
+        "lat": 38.9206,
+        "lon": -77.213999999999999,
+        "zone": "outer",
+        "dist_from_center_mi": 10.109999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 104,
+        "median_avm": 618737.5,
+        "p25_avm": 495760.5,
+        "p75_avm": 859120.25,
+        "mm": 61.873750000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.033636459999968, 38.901340580000067]
+      },
+      "properties": {
+        "OBJECTID": 53,
+        "NAME": "McPherson Sq",
+        "ADDRESS": "1402 I STREET NW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.901340580000003,
+        "longitude": -77.033636459999997,
+        "station": "McPherson Square",
+        "lat": 38.901899999999998,
+        "lon": -77.032499999999999,
+        "zone": "inner",
+        "dist_from_center_mi": 0.34000000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 3670,
+        "median_avm": 535372,
+        "p25_avm": 474825,
+        "p75_avm": 641904,
+        "mm": 53.537199999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.096954599999947, 39.000064290000068]
+      },
+      "properties": {
+        "OBJECTID": 54,
+        "NAME": "Medical Center",
+        "ADDRESS": "8810 ROCKVILLE PIKE, BETHESDA, MD",
+        "LINE": "red",
+        "latitude": 39.000064289999997,
+        "longitude": -77.096954600000004,
+        "station": "Medical Center",
+        "lat": 38.999899999999997,
+        "lon": -77.096800000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 7.9299999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 402,
+        "median_avm": 1230670,
+        "p25_avm": 1011734.75,
+        "p75_avm": 1461273.25,
+        "mm": 123.06699999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.028080279999983, 38.898322260000043]
+      },
+      "properties": {
+        "OBJECTID": 55,
+        "NAME": "Metro Center",
+        "ADDRESS": "607 13TH STREET NW, WASHINGTON, DC",
+        "LINE": "red, blue, orange, silver",
+        "latitude": 38.89832226,
+        "longitude": -77.028080279999998,
+        "station": "Metro Center",
+        "lat": 38.898299999999999,
+        "lon": -77.028099999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 0,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2589,
+        "median_avm": 493365,
+        "p25_avm": 230087,
+        "p75_avm": 614160,
+        "mm": 49.336500000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.946749989999944, 38.899199010000075]
+      },
+      "properties": {
+        "OBJECTID": 56,
+        "NAME": "Minnesota Ave",
+        "ADDRESS": "4120 MINNESOTA AVENUE NE, WASHINGTON, DC",
+        "LINE": "orange",
+        "latitude": 38.899199009999997,
+        "longitude": -76.946749990000001,
+        "station": "Minnesota Ave",
+        "lat": 38.890799999999999,
+        "lon": -76.9452,
+        "zone": "inner",
+        "dist_from_center_mi": 4.4900000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 903,
+        "median_avm": 471722,
+        "p25_avm": 408225,
+        "p75_avm": 531014.5,
+        "mm": 47.172199999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.868076999999971, 38.893842720000066]
+      },
+      "properties": {
+        "OBJECTID": 57,
+        "NAME": "Morgan Boulevard",
+        "ADDRESS": "300 GARRETT MORGAN BLVD., LANDOVER, MD",
+        "LINE": "blue, silver",
+        "latitude": 38.893842720000002,
+        "longitude": -76.868077,
+        "station": "Morgan Blvd",
+        "lat": 38.886200000000002,
+        "lon": -76.871300000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 8.4700000000000006,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 583,
+        "median_avm": 277194,
+        "p25_avm": 246808,
+        "p75_avm": 327288,
+        "mm": 27.7194
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.021916669999939, 38.906444600000043]
+      },
+      "properties": {
+        "OBJECTID": 58,
+        "NAME": "Mt Vernon Sq 7th St-Convention Center",
+        "ADDRESS": "700 M STREET NW, WASHINGTON, DC",
+        "LINE": "green, yellow",
+        "latitude": 38.9064446,
+        "longitude": -77.021916669999996,
+        "station": "Mount Vernon Square",
+        "lat": 38.9054,
+        "lon": -77.021799999999999,
+        "zone": "inner",
+        "dist_from_center_mi": 0.59999999999999998,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 4851,
+        "median_avm": 546549,
+        "p25_avm": 327431,
+        "p75_avm": 644995,
+        "mm": 54.654899999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.005087929999945, 38.87648887000006]
+      },
+      "properties": {
+        "OBJECTID": 59,
+        "NAME": "Navy Yard-Ballpark",
+        "ADDRESS": "1155 NEW JERSEY AVENUE SE, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.876488870000003,
+        "longitude": -77.005087930000002,
+        "station": "Navy Yard-Ballpark",
+        "lat": 38.875999999999998,
+        "lon": -77.004999999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 1.98,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 647,
+        "median_avm": 557638,
+        "p25_avm": 413452.5,
+        "p75_avm": 691110,
+        "mm": 55.763800000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.95626496999995, 38.851309160000028]
+      },
+      "properties": {
+        "OBJECTID": 60,
+        "NAME": "Naylor Road",
+        "ADDRESS": "3101 BRANCH AVENUE, TEMPLE HILLS, MD",
+        "LINE": "green",
+        "latitude": 38.85130916,
+        "longitude": -76.956264970000007,
+        "station": "Naylor Road",
+        "lat": 38.852200000000003,
+        "lon": -76.944400000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 5.5199999999999996,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 50,
+        "median_avm": 566031.5,
+        "p25_avm": 531748.25,
+        "p75_avm": 590395,
+        "mm": 56.603149999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.871843529999978, 38.947792660000061]
+      },
+      "properties": {
+        "OBJECTID": 61,
+        "NAME": "New Carrollton",
+        "ADDRESS": "4700 GARDEN CITY DRIVE, NEW CARROLLTON, MD",
+        "LINE": "orange",
+        "latitude": 38.947792659999998,
+        "longitude": -76.871843530000007,
+        "station": "New Carrollton",
+        "lat": 38.948799999999999,
+        "lon": -76.872799999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 9.0500000000000007,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 488,
+        "median_avm": 378166,
+        "p25_avm": 324197,
+        "p75_avm": 418581.75,
+        "mm": 37.816600000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.003022729999941, 38.907024000000035]
+      },
+      "properties": {
+        "OBJECTID": 62,
+        "NAME": "NoMa-Gallaudet U",
+        "ADDRESS": "1301 2ND STREET NE, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.907024,
+        "longitude": -77.003022729999998,
+        "station": "NoMa-Gallaudet U",
+        "lat": 38.907800000000002,
+        "lon": -76.994799999999998,
+        "zone": "inner",
+        "dist_from_center_mi": 1.9099999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 404,
+        "median_avm": 519693.5,
+        "p25_avm": 435105,
+        "p75_avm": 605594.75,
+        "mm": 51.969349999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.05371796999998, 38.869470480000075]
+      },
+      "properties": {
+        "OBJECTID": 63,
+        "NAME": "Pentagon",
+        "ADDRESS": "2 SOUTH ROTARY ROAD, ARLINGTON, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.869470479999997,
+        "longitude": -77.053717969999994,
+        "station": "Pentagon",
+        "lat": 38.869300000000003,
+        "lon": -77.053899999999999,
+        "zone": "inner",
+        "dist_from_center_mi": 2.4399999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 0,
+        "median_avm": null,
+        "p25_avm": null,
+        "p75_avm": null,
+        "mm": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.059541219999971, 38.86189016000003]
+      },
+      "properties": {
+        "OBJECTID": 64,
+        "NAME": "Pentagon City",
+        "ADDRESS": "1250 SOUTH HAYES ST., ARLINGTON, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.861890160000002,
+        "longitude": -77.05954122,
+        "station": "Pentagon City",
+        "lat": 38.862699999999997,
+        "lon": -77.059799999999996,
+        "zone": "inner",
+        "dist_from_center_mi": 2.9900000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1296,
+        "median_avm": 603656,
+        "p25_avm": 474116,
+        "p75_avm": 826218,
+        "mm": 60.365600000000001
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.985497589999966, 38.881271060000074]
+      },
+      "properties": {
+        "OBJECTID": 65,
+        "NAME": "Potomac Ave",
+        "ADDRESS": "1400 POTOMAC AVENUE SE, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.881271060000003,
+        "longitude": -76.985497589999994,
+        "station": "Potomac Ave",
+        "lat": 38.882599999999996,
+        "lon": -76.986599999999996,
+        "zone": "inner",
+        "dist_from_center_mi": 2.48,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1222,
+        "median_avm": 467126,
+        "p25_avm": 406786.5,
+        "p75_avm": 562172,
+        "mm": 46.712600000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.955883779999965, 38.965393250000034]
+      },
+      "properties": {
+        "OBJECTID": 66,
+        "NAME": "Prince George's Plaza",
+        "ADDRESS": null,
+        "LINE": "green",
+        "latitude": 38.965393249999998,
+        "longitude": -76.955883779999994,
+        "station": "Prince George's Plaza",
+        "lat": 38.960900000000002,
+        "lon": -76.939499999999995,
+        "zone": "outer",
+        "dist_from_center_mi": 6.4299999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1515,
+        "median_avm": 500906,
+        "p25_avm": 410915,
+        "p75_avm": 574050,
+        "mm": 50.090600000000002
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.044044579999934, 38.853424160000031]
+      },
+      "properties": {
+        "OBJECTID": 67,
+        "NAME": "Reagan National Airport",
+        "ADDRESS": "2400 S. SMITH BLVD., ARLINGTON, VA",
+        "LINE": "blue, yellow",
+        "latitude": 38.853424160000003,
+        "longitude": -77.044044580000005,
+        "station": "Reagan National Airport",
+        "lat": 38.852800000000002,
+        "lon": -77.044399999999996,
+        "zone": "inner",
+        "dist_from_center_mi": 3.2599999999999998,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 181,
+        "median_avm": 601793,
+        "p25_avm": 556226,
+        "p75_avm": 623555,
+        "mm": 60.179299999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.360187399999973, 38.952775790000032]
+      },
+      "properties": {
+        "OBJECTID": 68,
+        "NAME": "Reston Town Center",
+        "ADDRESS": "12023-A SUNSET HILLS RD, RESTON, VA 20190",
+        "LINE": "silver",
+        "latitude": 38.952775789999997,
+        "longitude": -77.360187400000001,
+        "station": "Reston Town Center",
+        "lat": 38.959600000000002,
+        "lon": -77.358999999999995,
+        "zone": "outer",
+        "dist_from_center_mi": 18.280000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 159,
+        "median_avm": 642755,
+        "p25_avm": 592274.5,
+        "p75_avm": 753367,
+        "mm": 64.275499999999994
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.995939189999945, 38.921067480000033]
+      },
+      "properties": {
+        "OBJECTID": 69,
+        "NAME": "Rhode Island Ave-Brentwood",
+        "ADDRESS": "801 RHODE ISLAND AVENUE NE, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.921067479999998,
+        "longitude": -76.995939190000001,
+        "station": "Rhode Island Ave",
+        "lat": 38.9206,
+        "lon": -76.994299999999996,
+        "zone": "inner",
+        "dist_from_center_mi": 2.3799999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 726,
+        "median_avm": 500172,
+        "p25_avm": 461778,
+        "p75_avm": 641023,
+        "mm": 50.017200000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.146127669999942, 39.084329430000025]
+      },
+      "properties": {
+        "OBJECTID": 70,
+        "NAME": "Rockville",
+        "ADDRESS": "251 HUNGERFORD DRIVE, ROCKVILLE, MD",
+        "LINE": "red",
+        "latitude": 39.084329429999997,
+        "longitude": -77.146127669999998,
+        "station": "Rockville",
+        "lat": 39.084499999999998,
+        "lon": -77.1524,
+        "zone": "outer",
+        "dist_from_center_mi": 14.49,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1138,
+        "median_avm": 657703.5,
+        "p25_avm": 266832,
+        "p75_avm": 1104403.5,
+        "mm": 65.770349999999993
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.070910979999951, 38.895986880000066]
+      },
+      "properties": {
+        "OBJECTID": 71,
+        "NAME": "Rosslyn",
+        "ADDRESS": "1850 N. MOORE STREET, ARLINGTON, VA",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.895986880000002,
+        "longitude": -77.070910979999994,
+        "station": "Rosslyn",
+        "lat": 38.895899999999997,
+        "lon": -77.070899999999995,
+        "zone": "inner",
+        "dist_from_center_mi": 2.3100000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2637,
+        "median_avm": 657872,
+        "p25_avm": 551034,
+        "p75_avm": 873831,
+        "mm": 65.787199999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.164629679999962, 39.11993515000006]
+      },
+      "properties": {
+        "OBJECTID": 72,
+        "NAME": "Shady Grove",
+        "ADDRESS": "15903 SOMERVILLE DRIVE, DERWOOD, MD",
+        "LINE": "red",
+        "latitude": 39.119935150000003,
+        "longitude": -77.164629680000004,
+        "station": "Shady Grove",
+        "lat": 39.119599999999998,
+        "lon": -77.164500000000004,
+        "zone": "outer",
+        "dist_from_center_mi": 16.949999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 836,
+        "median_avm": 369816,
+        "p25_avm": 279216,
+        "p75_avm": 482006,
+        "mm": 36.9816
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.021913989999973, 38.913484660000051]
+      },
+      "properties": {
+        "OBJECTID": 73,
+        "NAME": "Shaw-Howard U",
+        "ADDRESS": "1801 7TH ST NW, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.913484660000002,
+        "longitude": -77.021913990000002,
+        "station": "Shaw-Howard U",
+        "lat": 38.912399999999998,
+        "lon": -77.022199999999998,
+        "zone": "inner",
+        "dist_from_center_mi": 1.02,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2642,
+        "median_avm": 645204,
+        "p25_avm": 544678,
+        "p75_avm": 744545,
+        "mm": 64.520399999999995
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.031020119999937, 38.993957180000052]
+      },
+      "properties": {
+        "OBJECTID": 74,
+        "NAME": "Silver Spring",
+        "ADDRESS": "8400 COLESVILLE ROAD, SILVER SPRING, MD",
+        "LINE": "red",
+        "latitude": 38.993957180000002,
+        "longitude": -77.031020119999994,
+        "station": "Silver Spring",
+        "lat": 38.993899999999996,
+        "lon": -77.031499999999994,
+        "zone": "outer",
+        "dist_from_center_mi": 6.6100000000000003,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1218,
+        "median_avm": 340412,
+        "p25_avm": 305039,
+        "p75_avm": 1063062.25,
+        "mm": 34.041200000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.028068519999977, 38.888026490000072]
+      },
+      "properties": {
+        "OBJECTID": 75,
+        "NAME": "Smithsonian",
+        "ADDRESS": "1201 JEFFERSON DRIVE SW, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.888026490000001,
+        "longitude": -77.028068520000005,
+        "station": "Smithsonian",
+        "lat": 38.887900000000002,
+        "lon": -77.028199999999998,
+        "zone": "inner",
+        "dist_from_center_mi": 0.71999999999999997,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1,
+        "median_avm": null,
+        "p25_avm": null,
+        "p75_avm": null,
+        "mm": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.975056409999979, 38.841093560000047]
+      },
+      "properties": {
+        "OBJECTID": 76,
+        "NAME": "Southern Avenue",
+        "ADDRESS": "1411 SOUTHERN AVENUE, TEMPLE HILLS, MD",
+        "LINE": "green",
+        "latitude": 38.841093559999997,
+        "longitude": -76.975056409999993,
+        "station": "Southern Ave",
+        "lat": 38.845199999999998,
+        "lon": -76.974900000000005,
+        "zone": "inner",
+        "dist_from_center_mi": 4.6500000000000004,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 769,
+        "median_avm": 417610,
+        "p25_avm": 300631,
+        "p75_avm": 520222,
+        "mm": 41.761000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.241560349999986, 38.928959630000065]
+      },
+      "properties": {
+        "OBJECTID": 77,
+        "NAME": "Spring Hill",
+        "ADDRESS": "1576 SPRING HILL ROAD VIENNA, VA 22182",
+        "LINE": "silver",
+        "latitude": 38.928959630000001,
+        "longitude": -77.24156035,
+        "station": "Spring Hill",
+        "lat": 38.9283,
+        "lon": -77.269499999999994,
+        "zone": "outer",
+        "dist_from_center_mi": 13.140000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 65,
+        "median_avm": 3685164,
+        "p25_avm": 3489070,
+        "p75_avm": 3995072,
+        "mm": 368.51639999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.977091169999937, 38.886716880000051]
+      },
+      "properties": {
+        "OBJECTID": 78,
+        "NAME": "Stadium-Armory",
+        "ADDRESS": "290 19TH STREET SE, WASHINGTON, DC",
+        "LINE": "blue, orange, silver",
+        "latitude": 38.886716880000002,
+        "longitude": -76.977091169999994,
+        "station": "Stadium-Armory",
+        "lat": 38.885100000000001,
+        "lon": -76.978999999999999,
+        "zone": "inner",
+        "dist_from_center_mi": 2.79,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 815,
+        "median_avm": 476581,
+        "p25_avm": 424487.5,
+        "p75_avm": 552818,
+        "mm": 47.658099999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.931872409999983, 38.843972330000042]
+      },
+      "properties": {
+        "OBJECTID": 79,
+        "NAME": "Suitland",
+        "ADDRESS": "4500 SILVER HILL ROAD, SUITLAND, MD",
+        "LINE": "green",
+        "latitude": 38.84397233,
+        "longitude": -76.931872409999997,
+        "station": "Suitland",
+        "lat": 38.8444,
+        "lon": -76.923699999999997,
+        "zone": "outer",
+        "dist_from_center_mi": 6.7400000000000002,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 702,
+        "median_avm": 368041,
+        "p25_avm": 312877,
+        "p75_avm": 455958.75,
+        "mm": 36.804099999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.018178989999967, 38.976086330000044]
+      },
+      "properties": {
+        "OBJECTID": 80,
+        "NAME": "Takoma",
+        "ADDRESS": "327 CEDAR STREET NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.976086330000001,
+        "longitude": -77.018178989999996,
+        "station": "Takoma",
+        "lat": 38.975700000000003,
+        "lon": -77.017799999999994,
+        "zone": "outer",
+        "dist_from_center_mi": 5.3799999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1846,
+        "median_avm": 949382.5,
+        "p25_avm": 769775.75,
+        "p75_avm": 1128436.25,
+        "mm": 94.938249999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.079589629999987, 38.948859230000039]
+      },
+      "properties": {
+        "OBJECTID": 81,
+        "NAME": "Tenleytown-AU",
+        "ADDRESS": "4501 WISCONSIN AVENUE NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.948859229999997,
+        "longitude": -77.079589630000001,
+        "station": "Tenleytown-AU",
+        "lat": 38.947600000000001,
+        "lon": -77.079800000000006,
+        "zone": "inner",
+        "dist_from_center_mi": 4.4000000000000004,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1710,
+        "median_avm": 994297.5,
+        "p25_avm": 782157,
+        "p75_avm": 1124703.75,
+        "mm": 99.429749999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.120820279999975, 39.062475470000038]
+      },
+      "properties": {
+        "OBJECTID": 82,
+        "NAME": "Twinbrook",
+        "ADDRESS": "1600 CHAPMAN AVENUE, ROCKVILLE, MD",
+        "LINE": "red",
+        "latitude": 39.062475470000003,
+        "longitude": -77.120820280000004,
+        "station": "Twinbrook",
+        "lat": 39.071800000000003,
+        "lon": -77.1434,
+        "zone": "outer",
+        "dist_from_center_mi": 13.49,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 779,
+        "median_avm": 869373,
+        "p25_avm": 726696.5,
+        "p75_avm": 944847.5,
+        "mm": 86.937299999999993
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.221718029999977, 38.920682050000039]
+      },
+      "properties": {
+        "OBJECTID": 83,
+        "NAME": "Tysons",
+        "ADDRESS": "1943 CHAIN BRIDGE ROAD MCLEAN, VA 22102",
+        "LINE": "silver",
+        "latitude": 38.920682050000003,
+        "longitude": -77.221718030000005,
+        "station": "Tysons",
+        "lat": 38.920200000000001,
+        "lon": -77.228899999999996,
+        "zone": "outer",
+        "dist_from_center_mi": 10.9,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 92,
+        "median_avm": 561956,
+        "p25_avm": 519215.75,
+        "p75_avm": 599605.25,
+        "mm": 56.195599999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.027498179999952, 38.917010190000042]
+      },
+      "properties": {
+        "OBJECTID": 84,
+        "NAME": "U Street/African-Amer Civil War Memorial/Cardozo",
+        "ADDRESS": "1260 U STREET NW, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.917010189999999,
+        "longitude": -77.027498179999995,
+        "station": "U Street/Cardozo",
+        "lat": 38.916699999999999,
+        "lon": -77.028599999999997,
+        "zone": "inner",
+        "dist_from_center_mi": 1.27,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 4054,
+        "median_avm": 615950,
+        "p25_avm": 520275,
+        "p75_avm": 703687.25,
+        "mm": 61.594999999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.007416569999975, 38.897773830000062]
+      },
+      "properties": {
+        "OBJECTID": 85,
+        "NAME": "Union Station",
+        "ADDRESS": "605 1ST STREET NE, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.897773829999998,
+        "longitude": -77.007416570000004,
+        "station": "Union Station",
+        "lat": 38.897599999999997,
+        "lon": -77.006200000000007,
+        "zone": "inner",
+        "dist_from_center_mi": 1.1799999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 841,
+        "median_avm": 437243,
+        "p25_avm": 409659,
+        "p75_avm": 490787,
+        "mm": 43.724299999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.129113839999945, 38.799315430000036]
+      },
+      "properties": {
+        "OBJECTID": 86,
+        "NAME": "Van Dorn Street",
+        "ADDRESS": "5690 EISENHOWER AVENUE, ALEXANDRIA, VA",
+        "LINE": "blue",
+        "latitude": 38.79931543,
+        "longitude": -77.129113840000002,
+        "station": "Van Dorn Street",
+        "lat": 38.796199999999999,
+        "lon": -77.129499999999993,
+        "zone": "outer",
+        "dist_from_center_mi": 8.9199999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 138,
+        "median_avm": 760750,
+        "p25_avm": 599176.25,
+        "p75_avm": 2043483,
+        "mm": 76.075000000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.062988479999945, 38.94327308000004]
+      },
+      "properties": {
+        "OBJECTID": 87,
+        "NAME": "Van Ness-UDC",
+        "ADDRESS": "4230 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.943273079999997,
+        "longitude": -77.062988480000001,
+        "station": "Van Ness-UDC",
+        "lat": 38.944899999999997,
+        "lon": -77.063100000000006,
+        "zone": "inner",
+        "dist_from_center_mi": 3.73,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2267,
+        "median_avm": 629330,
+        "p25_avm": 545261.5,
+        "p75_avm": 1052646,
+        "mm": 62.933
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.272624619999988, 38.877608900000041]
+      },
+      "properties": {
+        "OBJECTID": 88,
+        "NAME": "Vienna/Fairfax-GMU",
+        "ADDRESS": "2900 NUTLEY ST., FAIRFAX, VA",
+        "LINE": "orange",
+        "latitude": 38.877608899999998,
+        "longitude": -77.272624620000002,
+        "station": "Vienna/Fairfax-GMU",
+        "lat": 38.877600000000001,
+        "lon": -77.2714,
+        "zone": "outer",
+        "dist_from_center_mi": 13.16,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 300,
+        "median_avm": 689626.5,
+        "p25_avm": 637820.5,
+        "p75_avm": 725810.5,
+        "mm": 68.962649999999996
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.102979599999969, 38.883373930000062]
+      },
+      "properties": {
+        "OBJECTID": 89,
+        "NAME": "Virginia Square-GMU",
+        "ADDRESS": "3600 FAIRFAX DRIVE, ARLINGTON, VA",
+        "LINE": "orange, silver",
+        "latitude": 38.883373929999998,
+        "longitude": -77.102979599999998,
+        "station": "Virginia Square-GMU",
+        "lat": 38.883600000000001,
+        "lon": -77.103700000000003,
+        "zone": "inner",
+        "dist_from_center_mi": 4.1900000000000004,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 4440,
+        "median_avm": 623533.5,
+        "p25_avm": 511295,
+        "p75_avm": 1788384.25,
+        "mm": 62.353349999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.017507489999957, 38.876469650000047]
+      },
+      "properties": {
+        "OBJECTID": 90,
+        "NAME": "Waterfront",
+        "ADDRESS": "399 M STREET SW, WASHINGTON, DC",
+        "LINE": "green",
+        "latitude": 38.876469649999997,
+        "longitude": -77.01750749,
+        "station": "Waterfront",
+        "lat": 38.876199999999997,
+        "lon": -77.016300000000001,
+        "zone": "inner",
+        "dist_from_center_mi": 1.6499999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 2462,
+        "median_avm": 531095,
+        "p25_avm": 501518,
+        "p75_avm": 680698.5,
+        "mm": 53.109499999999997
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.18909715999996, 38.900788330000069]
+      },
+      "properties": {
+        "OBJECTID": 91,
+        "NAME": "West Falls Church",
+        "ADDRESS": "7040 HAYCOCK ROAD, FALLS CHURCH, VA",
+        "LINE": "orange",
+        "latitude": 38.900788329999997,
+        "longitude": -77.189097160000003,
+        "station": "West Falls Church",
+        "lat": 38.900300000000001,
+        "lon": -77.187799999999996,
+        "zone": "outer",
+        "dist_from_center_mi": 8.5899999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 264,
+        "median_avm": 2447882.5,
+        "p25_avm": 483766,
+        "p75_avm": 3425289.75,
+        "mm": 244.78829999999999
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.969578949999971, 38.955047970000066]
+      },
+      "properties": {
+        "OBJECTID": 92,
+        "NAME": "West Hyattsville",
+        "ADDRESS": "2700 HAMILTON ST., HYATTSVILLE, MD",
+        "LINE": "green",
+        "latitude": 38.955047970000003,
+        "longitude": -76.969578949999999,
+        "station": "West Hyattsville",
+        "lat": 38.954300000000003,
+        "lon": -76.957599999999999,
+        "zone": "outer",
+        "dist_from_center_mi": 5.4199999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1459,
+        "median_avm": 463531,
+        "p25_avm": 220237,
+        "p75_avm": 542867.5,
+        "mm": 46.353099999999998
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.050109359999965, 39.037534960000073]
+      },
+      "properties": {
+        "OBJECTID": 93,
+        "NAME": "Wheaton",
+        "ADDRESS": "11171 GEORGIA AVENUE, SILVER SPRING, MD",
+        "LINE": "red",
+        "latitude": 39.037534960000002,
+        "longitude": -77.050109359999993,
+        "station": "Wheaton",
+        "lat": 39.035800000000002,
+        "lon": -77.052700000000002,
+        "zone": "outer",
+        "dist_from_center_mi": 9.5899999999999999,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1522,
+        "median_avm": 801140.5,
+        "p25_avm": 334806,
+        "p75_avm": 1002442,
+        "mm": 80.114050000000006
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.112832179999941, 39.048159170000076]
+      },
+      "properties": {
+        "OBJECTID": 94,
+        "NAME": "White Flint",
+        "ADDRESS": "5500 MARINELLI ROAD, ROCKVILLE, MD",
+        "LINE": "red",
+        "latitude": 39.048159169999998,
+        "longitude": -77.112832179999998,
+        "station": "White Flint",
+        "lat": 39.048200000000001,
+        "lon": -77.127300000000005,
+        "zone": "outer",
+        "dist_from_center_mi": 11.65,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 644,
+        "median_avm": 917968.5,
+        "p25_avm": 357797,
+        "p75_avm": 1595434.75,
+        "mm": 91.796850000000006
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.340062219999936, 38.947740660000079]
+      },
+      "properties": {
+        "OBJECTID": 95,
+        "NAME": "Wiehle-Reston East",
+        "ADDRESS": "1862 WIEHLE AVENUE RESTON, VA 20190",
+        "LINE": "silver",
+        "latitude": 38.947740660000001,
+        "longitude": -77.340062219999993,
+        "station": "Wiehle-Reston East",
+        "lat": 38.947299999999998,
+        "lon": -77.340699999999998,
+        "zone": "outer",
+        "dist_from_center_mi": 17.140000000000001,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 79,
+        "median_avm": 683601,
+        "p25_avm": 615646.5,
+        "p75_avm": 3278535.5,
+        "mm": 68.360100000000003
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.052420319999953, 38.925092930000062]
+      },
+      "properties": {
+        "OBJECTID": 96,
+        "NAME": "Woodley Park-Zoo/Adams Morgan",
+        "ADDRESS": "2622 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "LINE": "red",
+        "latitude": 38.925092929999998,
+        "longitude": -77.052420319999996,
+        "station": "Woodley Park",
+        "lat": 38.924100000000003,
+        "lon": -77.054199999999994,
+        "zone": "inner",
+        "dist_from_center_mi": 2.27,
+        "center_name": "Metro Center",
+        "core_radius_mi": 5,
+        "search_radius_mi": 0.5,
+        "n_properties": 1617,
+        "median_avm": 638244,
+        "p25_avm": 515098,
+        "p75_avm": 973763,
+        "mm": 63.824399999999997
+      }
+    }
+  ]
+}
