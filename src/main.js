@@ -69,7 +69,7 @@ const map = new mapboxgl.Map({
 map.on("load", async () => {
   try {
     const response = await fetch("/data/dc/basic-lines.geojson");
-    const stationResponse = await fetch("/data/dc/stations.geojson");
+    const stationResponse = await fetch("/data/dc/dc-stations.geojson");
     if (!response.ok) {
       throw new Error(`Failed to load metro lines: ${response.status}`);
     }
@@ -94,7 +94,7 @@ map.on("load", async () => {
       source: "metro-lines",
       paint: {
         "line-color": lineColorExpression,
-        "line-width": 3,
+        "line-width": 5,
       },
     });
 
@@ -113,6 +113,41 @@ map.on("load", async () => {
         "circle-stroke-color": "#202020",
         "circle-stroke-width": 1.5,
       },
+    });
+
+    map.on("click", "main-metro-stations", (event) => {
+      const feature = event.features?.[0];
+      if (!feature) return;
+
+      const popupContent = document.createElement("div");
+      const stationName = document.createElement("h3");
+      stationName.textContent = feature.properties?.NAME ?? "Metro station";
+
+      const salePrice = document.createElement("p");
+      const medianSalePrice = feature.properties?.median_sale_price;
+      salePrice.textContent =
+        typeof medianSalePrice === "number"
+          ? `Median sale price: ${new Intl.NumberFormat("en-US", {
+              style: "currency",
+              currency: "USD",
+              maximumFractionDigits: 0,
+            }).format(medianSalePrice)}`
+          : "Median sale price: no sales data";
+
+      popupContent.append(stationName, salePrice);
+
+      new mapboxgl.Popup()
+        .setLngLat(feature.geometry.coordinates)
+        .setDOMContent(popupContent)
+        .addTo(map);
+    });
+
+    map.on("mouseenter", "main-metro-stations", () => {
+      map.getCanvas().style.cursor = "pointer";
+    });
+
+    map.on("mouseleave", "main-metro-stations", () => {
+      map.getCanvas().style.cursor = "";
     });
   } catch (error) {
     console.error("Failed to load metro data:", error);
