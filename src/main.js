@@ -68,8 +68,12 @@ const map = new mapboxgl.Map({
 
 map.on("load", async () => {
   try {
-    const response = await fetch("/data/dc/basic-lines.geojson");
-    const stationResponse = await fetch("/data/dc/dc-stations.geojson");
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}data/dc/basic-lines.geojson`,
+    );
+    const stationResponse = await fetch(
+      `${import.meta.env.BASE_URL}data/dc/dc-stations.geojson`,
+    );
     if (!response.ok) {
       throw new Error(`Failed to load metro lines: ${response.status}`);
     }
