@@ -19,7 +19,7 @@ const lineColorExpression = [
   "match",
   ["get", "NAME"],
   ...Object.entries(routeColors).flat(),
-  "fallbackLineColor",
+  fallbackLineColor,
 ];
 
 function renderLineLegend(features) {
@@ -34,9 +34,10 @@ function renderLineLegend(features) {
     ...new Set(
       features
         .map((feature) => feature.properties?.NAME)
-        .filter((name) => typeof name === "string" && name.length > 0),
+        .filter((name) => typeof name === "string" && name.length > 0)
+        .sort(),
     ),
-  ].sort();
+  ];
 
   for (const routeName of routeNames) {
     const item = document.createElement("li");
@@ -80,7 +81,6 @@ map.on("load", async () => {
 
     const lines = await response.json();
     const stations = await stationResponse.json();
-
     renderLineLegend(lines.features);
 
     map.addSource("metro-lines", {
