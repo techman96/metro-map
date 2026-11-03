@@ -5,7 +5,7 @@
 
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
 
     <meta
@@ -13,30 +13,60 @@
       content="Interactive metro maps of cities, showing lines and stations."
     />
 
-    <title>Metro Maps</title>
+    <title>Washington, DC Metro Map</title>
   </head>
 
   <body>
-    <header class="app-header">
-      <div class="app-titles">
-        <h1>Metro Maps</h1>
-        <p id="city-subtitle" class="city-subtitle"></p>
-      </div>
-
-      <div class="city-picker">
-        <label for="city-select">City</label>
-        <select id="city-select"></select>
-      </div>
-    </header>
-
-    <main class="app-main">
+    <main class="map-shell" aria-label="Washington, DC Metro map">
       <div id="map" class="map"></div>
-      <aside id="legend" class="legend" aria-label="Metro lines"></aside>
-    </main>
+      <aside class="sidebar" aria-label="Metro map panel">
+        <div class="station-search" role="search">
+          <label class="visually-hidden" for="station-search"
+            >Search stations</label
+          >
+          <div class="station-search-field">
+            <input
+              id="station-search"
+              type="search"
+              placeholder="Search stations"
+              autocomplete="off"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="station-results"
+            />
+            <button
+              id="clear-station-search"
+              class="clear-search"
+              type="button"
+              aria-label="Clear station search"
+              title="Clear search"
+              hidden
+            >
+              &times;
+            </button>
+          </div>
+        </div>
 
-    <footer class="app-footer">
-      <p id="data-source"></p>
-    </footer>
+        <ul
+          id="station-results"
+          class="station-results"
+          aria-label="Station search results"
+          aria-live="polite"
+          hidden
+        ></ul>
+
+        <section
+          id="station-details"
+          class="station-details"
+          aria-label="Selected station details"
+          aria-live="polite"
+        ></section>
+
+        <section class="legend-section" aria-label="Metro routes">
+          <div id="legend" class="legend" aria-label="Metro route legend"></div>
+        </section>
+      </aside>
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>

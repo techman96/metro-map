@@ -4,6 +4,13 @@ import "./style.css";
 
 const mapContainer = document.getElementById("map");
 const legendContainer = document.getElementById("legend");
+const sidebar = document.querySelector(".sidebar");
+const stationSearchInput = document.getElementById("station-search");
+const clearStationSearchButton = document.getElementById(
+  "clear-station-search",
+);
+const stationResults = document.getElementById("station-results");
+const stationDetails = document.getElementById("station-details");
 
 const routeColors = {
   red: "#BF0D3E",
@@ -58,6 +65,160 @@ function renderLineLegend(features) {
   legendContainer.replaceChildren(title, list);
 }
 
+function createStationPopupContent(feature) {
+  const popupContent = document.createElement("div");
+  popupContent.className = "station-popup";
+
+  const stationName = document.createElement("h3");
+  stationName.className = "station-popup-title";
+  stationName.textContent = feature.properties?.NAME ?? "Metro station";
+
+  const routeList = document.createElement("div");
+  routeList.className = "station-popup-routes";
+
+  const routeNames =
+    typeof feature.properties?.LINE === "string"
+      ? feature.properties.LINE.split(",").map((routeName) => routeName.trim())
+      : [];
+
+  for (const routeName of routeNames) {
+    const route = document.createElement("span");
+    route.className = "station-popup-route";
+
+    const swatch = document.createElement("span");
+    swatch.className = "station-popup-swatch";
+    swatch.style.backgroundColor =
+      routeColors[routeName.toLowerCase()] ?? fallbackLineColor;
+    swatch.setAttribute("aria-hidden", "true");
+
+    const label = document.createElement("span");
+    label.textContent = `${routeName} line`;
+
+    route.append(swatch, label);
+    routeList.append(route);
+  }
+
+  if (routeNames.length === 0) {
+    const unavailable = document.createElement("span");
+    unavailable.className = "station-popup-route-unavailable";
+    unavailable.textContent = "Lines not available";
+    routeList.append(unavailable);
+  }
+
+  const divider = document.createElement("hr");
+  divider.className = "station-popup-divider";
+
+  const salePrice = document.createElement("p");
+  salePrice.className = "station-popup-price";
+  salePrice.textContent = `Median sale price: ${formatMedianSalePrice(
+    feature.properties?.median_sale_price,
+  )}`;
+
+  popupContent.append(stationName, routeList, divider, salePrice);
+  return popupContent;
+}
+
+function formatMedianSalePrice(value) {
+  return typeof value === "number"
+    ? new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        maximumFractionDigits: 0,
+      }).format(value)
+    : "no sales data";
+}
+
+function renderStationDetails(feature) {
+  const heading = document.createElement("h2");
+  heading.className = "station-details-title";
+  heading.textContent = feature.properties?.NAME ?? "Metro station";
+
+  const lines = document.createElement("p");
+  lines.className = "station-details-lines";
+  lines.textContent = `Lines: ${feature.properties?.LINE ?? "Not available"}`;
+
+  const salePrice = document.createElement("p");
+  salePrice.className = "station-details-price";
+  salePrice.textContent = `Median sale price: ${formatMedianSalePrice(
+    feature.properties?.median_sale_price,
+  )}`;
+
+  stationDetails.replaceChildren(heading, lines, salePrice);
+}
+
+function updateSidebarExpanded() {
+  sidebar.classList.toggle(
+    "is-expanded",
+    !stationResults.hidden || stationDetails.childElementCount > 0,
+  );
+}
+
+function updateClearSearchButton() {
+  clearStationSearchButton.hidden = stationSearchInput.value.length === 0;
+}
+
+function renderStationResults(stations, query) {
+  const searchTerm = query.trim().toLocaleLowerCase();
+  stationResults.replaceChildren();
+
+  if (!searchTerm) {
+    stationResults.hidden = true;
+    stationSearchInput.setAttribute("aria-expanded", "false");
+    updateSidebarExpanded();
+    return;
+  }
+
+  const matches = stations
+    .filter((feature) =>
+      feature.properties?.NAME?.toLocaleLowerCase().includes(searchTerm),
+    )
+    .slice(0, 8);
+
+  if (matches.length === 0) {
+    const emptyResult = document.createElement("li");
+    emptyResult.className = "station-no-results";
+    emptyResult.textContent = "No stations found";
+    stationResults.append(emptyResult);
+  } else {
+    for (const feature of matches) {
+      const item = document.createElement("li");
+      const result = document.createElement("button");
+      result.className = "station-result";
+      result.type = "button";
+      result.textContent = feature.properties.NAME;
+      result.addEventListener("click", () => {
+        stationSearchInput.value = feature.properties.NAME;
+        updateClearSearchButton();
+        stationResults.hidden = true;
+        stationSearchInput.setAttribute("aria-expanded", "false");
+        renderStationDetails(feature);
+        updateSidebarExpanded();
+        map.flyTo({
+          center: feature.geometry.coordinates,
+          zoom: Math.max(map.getZoom(), 14),
+          duration: 900,
+        });
+      });
+      item.append(result);
+      stationResults.append(item);
+    }
+  }
+
+  stationResults.hidden = false;
+  stationSearchInput.setAttribute("aria-expanded", "true");
+  updateSidebarExpanded();
+}
+
+async function fetchGeoJson(fileName, dataLabel) {
+  const response = await fetch(
+    `${import.meta.env.BASE_URL}data/dc/${fileName}`,
+  );
+  if (!response.ok) {
+    throw new Error(`Failed to load ${dataLabel}: ${response.status}`);
+  }
+  return response.json();
+}
+
 const map = new mapboxgl.Map({
   container: mapContainer,
   style: "mapbox://styles/shumayl/cmuvqd3gd007x01s1304r56i4",
@@ -66,25 +227,48 @@ const map = new mapboxgl.Map({
   zoom: 10,
 });
 
+const metroDataPromise = Promise.all([
+  fetchGeoJson("basic-lines.geojson", "metro lines"),
+  fetchGeoJson("dc-stations.geojson", "metro stations"),
+]);
+
+metroDataPromise
+  .then(([, stations]) => {
+    stationSearchInput.addEventListener("input", () => {
+      renderStationResults(stations.features, stationSearchInput.value);
+      updateClearSearchButton();
+    });
+
+    clearStationSearchButton.addEventListener("click", () => {
+      stationSearchInput.value = "";
+      stationResults.replaceChildren();
+      stationResults.hidden = true;
+      stationDetails.replaceChildren();
+      stationSearchInput.setAttribute("aria-expanded", "false");
+      updateClearSearchButton();
+      updateSidebarExpanded();
+      stationSearchInput.focus();
+    });
+
+    stationSearchInput.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        stationResults.hidden = true;
+        stationSearchInput.setAttribute("aria-expanded", "false");
+        updateSidebarExpanded();
+      }
+    });
+  })
+  .catch((error) => {
+    console.error("Failed to load metro data:", error);
+  });
+
+map.on("error", (event) => {
+  console.error("Mapbox error:", event.error);
+});
+
 map.on("load", async () => {
   try {
-    const response = await fetch(
-      `${import.meta.env.BASE_URL}data/dc/basic-lines.geojson`,
-    );
-    const stationResponse = await fetch(
-      `${import.meta.env.BASE_URL}data/dc/dc-stations.geojson`,
-    );
-    if (!response.ok) {
-      throw new Error(`Failed to load metro lines: ${response.status}`);
-    }
-    if (!stationResponse.ok) {
-      throw new Error(
-        `Failed to load metro stations: ${stationResponse.status}`,
-      );
-    }
-
-    const lines = await response.json();
-    const stations = await stationResponse.json();
+    const [lines, stations] = await metroDataPromise;
     renderLineLegend(lines.features);
 
     map.addSource("metro-lines", {
@@ -119,40 +303,42 @@ map.on("load", async () => {
       },
     });
 
-    map.on("click", "main-metro-stations", (event) => {
-      const feature = event.features?.[0];
-      if (!feature) return;
-
-      const popupContent = document.createElement("div");
-      const stationName = document.createElement("h3");
-      stationName.textContent = feature.properties?.NAME ?? "Metro station";
-
-      const salePrice = document.createElement("p");
-      const medianSalePrice = feature.properties?.median_sale_price;
-      salePrice.textContent =
-        typeof medianSalePrice === "number"
-          ? `Median sale price: ${new Intl.NumberFormat("en-US", {
-              style: "currency",
-              currency: "USD",
-              maximumFractionDigits: 0,
-            }).format(medianSalePrice)}`
-          : "Median sale price: no sales data";
-
-      popupContent.append(stationName, salePrice);
-
-      new mapboxgl.Popup()
-        .setLngLat(feature.geometry.coordinates)
-        .setDOMContent(popupContent)
-        .addTo(map);
+    const stationPopup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      offset: 12,
     });
 
-    map.on("mouseenter", "main-metro-stations", () => {
-      map.getCanvas().style.cursor = "pointer";
-    });
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      map.on("mousemove", "main-metro-stations", (event) => {
+        const feature = event.features?.[0];
+        if (!feature) return;
 
-    map.on("mouseleave", "main-metro-stations", () => {
-      map.getCanvas().style.cursor = "";
-    });
+        stationPopup
+          .setLngLat(feature.geometry.coordinates)
+          .setDOMContent(createStationPopupContent(feature))
+          .addTo(map);
+      });
+
+      map.on("mouseenter", "main-metro-stations", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      map.on("mouseleave", "main-metro-stations", () => {
+        map.getCanvas().style.cursor = "";
+        stationPopup.remove();
+      });
+    } else {
+      map.on("click", "main-metro-stations", (event) => {
+        const feature = event.features?.[0];
+        if (!feature) return;
+
+        stationPopup
+          .setLngLat(feature.geometry.coordinates)
+          .setDOMContent(createStationPopupContent(feature))
+          .addTo(map);
+      });
+    }
   } catch (error) {
     console.error("Failed to load metro data:", error);
   }
