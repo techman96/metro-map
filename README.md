@@ -1,6 +1,17 @@
 # Metro Maps
 
-An interactive Mapbox GL JS map of Washington, DC Metro routes and stations. Routes are colored by line name, a legend is generated from the route data, and clicking a station shows its name and median sale price.
+An interactive Washington, DC Metro map built with Svelte 5, Vite, and Mapbox GL JS. Routes are colored by line name. Station popups show served lines and median sale price on hover, with tap support on touch devices. Search selects a station and flies to it; a separate reset button restores the original map view. The generated route legend is currently hidden.
+
+## Application structure
+
+- `index.html`: page metadata and Svelte mount target.
+- `src/entry.js`: mounts the Svelte app and imports the stylesheets.
+- `src/App.svelte`: reactive search, results, selected-station details, clear button, and hidden legend.
+- `src/main.js`: Mapbox controller, route colors, data loading, layers, popups, camera movement, and reset control. The map is created when the Svelte component mounts and removed when it unmounts.
+- `src/style.css`: shared map, popup, and responsive search-panel styles. The compact search panel sits at the bottom on mobile.
+- `vite.config.js`: Svelte plugin and relative deployment base path.
+
+The project uses Svelte with Vite, not SvelteKit. The GeoJSON files and GitHub Pages deployment workflow remain unchanged by the migration.
 
 ## Requirements
 

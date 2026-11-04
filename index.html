@@ -17,57 +17,8 @@
   </head>
 
   <body>
-    <main class="map-shell" aria-label="Washington, DC Metro map">
-      <div id="map" class="map"></div>
-      <aside class="sidebar" aria-label="Metro map panel">
-        <div class="station-search" role="search">
-          <label class="visually-hidden" for="station-search"
-            >Search stations</label
-          >
-          <div class="station-search-field">
-            <input
-              id="station-search"
-              type="search"
-              placeholder="Search stations"
-              autocomplete="off"
-              aria-autocomplete="list"
-              aria-expanded="false"
-              aria-controls="station-results"
-            />
-            <button
-              id="clear-station-search"
-              class="clear-search"
-              type="button"
-              aria-label="Clear station search"
-              title="Clear search"
-              hidden
-            >
-              &times;
-            </button>
-          </div>
-        </div>
+    <div id="app"></div>
 
-        <ul
-          id="station-results"
-          class="station-results"
-          aria-label="Station search results"
-          aria-live="polite"
-          hidden
-        ></ul>
-
-        <section
-          id="station-details"
-          class="station-details"
-          aria-label="Selected station details"
-          aria-live="polite"
-        ></section>
-
-        <section class="legend-section" aria-label="Metro routes">
-          <div id="legend" class="legend" aria-label="Metro route legend"></div>
-        </section>
-      </aside>
-    </main>
-
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/entry.js"></script>
   </body>
 </html>
