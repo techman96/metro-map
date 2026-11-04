@@ -4,11 +4,14 @@ An interactive Washington, DC Metro map built with Svelte 5, Vite, and Mapbox GL
 
 ## Application structure
 
+Station search supports Arrow Down/Up to highlight results, Enter to select the highlighted result (or the first match), and Escape or Tab to dismiss the list. Focus remains in the input during arrow-key navigation, and highlighted results scroll into view.
+
 - `index.html`: page metadata and Svelte mount target.
 - `src/entry.js`: mounts the Svelte app and imports the stylesheets.
-- `src/App.svelte`: reactive search, results, selected-station details, clear button, and hidden legend.
-- `src/main.js`: Mapbox controller, route colors, data loading, layers, popups, camera movement, and reset control. The map is created when the Svelte component mounts and removed when it unmounts.
-- `src/style.css`: shared map, popup, and responsive search-panel styles. The compact search panel sits at the bottom on mobile.
+- `src/App.svelte`: reactive search, results, selected-station details, clear button, hidden legend, and their scoped styles. The compact search panel sits at the bottom on mobile.
+- `src/Map.svelte`: Mapbox initialization, data loading, layers, popups, camera movement, reset control, and map styles. The map is created in `onMount` and removed when the component unmounts. Shared route colors and the price formatter are module exports used by `App.svelte`.
+- `src/StationPopup.svelte`: station name, served-line swatches, divider, median sale price, and scoped popup styles. Mapbox hosts the component; it is unmounted on popup close, station change, or map teardown.
+- `src/style.css`: global typography, box sizing, and document sizing. Mapbox's package stylesheet is imported separately by `src/entry.js`.
 - `vite.config.js`: Svelte plugin and relative deployment base path.
 
 The project uses Svelte with Vite, not SvelteKit. The GeoJSON files and GitHub Pages deployment workflow remain unchanged by the migration.

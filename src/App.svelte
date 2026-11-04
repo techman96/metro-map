@@ -1,20 +1,20 @@
 <script>
-  import { onMount } from "svelte";
-  import {
-    createMetroMap,
+  import { tick } from "svelte";
+  import Map, {
     routeColors,
     fallbackLineColor,
     formatMedianSalePrice,
-  } from "./main.js";
+  } from "./Map.svelte";
 
-  let mapContainer;
   let searchInput;
-  let mapController;
+  let resultsList;
+  let mapComponent;
   let query = $state("");
   let stations = $state.raw([]);
   let lineFeatures = $state.raw([]);
   let selectedStation = $state.raw(null);
   let resultsDismissed = $state(false);
+  let activeResultIndex = $state(-1);
 
   const searchTerm = $derived(query.trim().toLocaleLowerCase());
   const showResults = $derived(searchTerm.length > 0 && !resultsDismissed);
@@ -32,31 +32,76 @@
       .filter((name) => typeof name === "string" && name.length > 0))].sort(),
   );
 
-  onMount(() => {
-    mapController = createMetroMap(mapContainer, (loadedLines, loadedStations) => {
-      lineFeatures = loadedLines;
-      stations = loadedStations;
-    });
-    return () => mapController.destroy();
-  });
+  const activeResultId = $derived(
+    showResults && matches[activeResultIndex]
+      ? `station-option-${matches[activeResultIndex].id}`
+      : undefined,
+  );
+
+  function handleSearchInput() {
+    resultsDismissed = false;
+    activeResultIndex = -1;
+  }
+
+  async function handleSearchKeydown(event) {
+    if (event.isComposing) return;
+
+    if (event.key === "Escape" || event.key === "Tab") {
+      if (event.key === "Escape") event.preventDefault();
+      resultsDismissed = true;
+      activeResultIndex = -1;
+      return;
+    }
+
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      if (!searchTerm || matches.length === 0) return;
+      event.preventDefault();
+      const previousIndex = resultsDismissed ? -1 : activeResultIndex;
+      resultsDismissed = false;
+      if (event.key === "ArrowDown") {
+        activeResultIndex = (previousIndex + 1) % matches.length;
+      } else {
+        activeResultIndex = previousIndex <= 0
+          ? matches.length - 1
+          : previousIndex - 1;
+      }
+      await tick();
+      resultsList?.querySelectorAll('[role="option"]')[activeResultIndex]
+        ?.scrollIntoView({ block: "nearest" });
+      return;
+    }
+
+    if (event.key === "Enter" && showResults && matches.length > 0) {
+      event.preventDefault();
+      selectStation(matches[activeResultIndex >= 0 ? activeResultIndex : 0]);
+    }
+  }
 
   function selectStation(feature) {
     query = feature.properties.NAME;
     resultsDismissed = true;
+    activeResultIndex = -1;
     selectedStation = feature;
-    mapController.selectStation(feature);
+    mapComponent.selectStation(feature);
   }
 
   function clearSearch() {
     query = "";
     resultsDismissed = false;
+    activeResultIndex = -1;
     selectedStation = null;
     searchInput.focus();
   }
 </script>
 
 <main class="map-shell" aria-label="Washington, DC Metro map">
-  <div id="map" class="map" bind:this={mapContainer}></div>
+  <Map
+    bind:this={mapComponent}
+    onData={(loadedLines, loadedStations) => {
+      lineFeatures = loadedLines;
+      stations = loadedStations;
+    }}
+  />
   <aside class="sidebar" class:is-expanded={expanded} aria-label="Metro map panel">
     <div class="station-search" role="search">
       <label class="visually-hidden" for="station-search">Search stations</label>
@@ -64,16 +109,17 @@
         <input
           id="station-search"
           type="search"
+          role="combobox"
           placeholder="Search stations"
           autocomplete="off"
           aria-autocomplete="list"
+          aria-expanded={showResults}
+          aria-activedescendant={activeResultId}
           aria-controls="station-results"
           bind:this={searchInput}
           bind:value={query}
-          oninput={() => resultsDismissed = false}
-          onkeydown={(event) => {
-            if (event.key === "Escape") resultsDismissed = true;
-          }}
+          oninput={handleSearchInput}
+          onkeydown={handleSearchKeydown}
         />
         <button
           id="clear-station-search"
@@ -90,21 +136,29 @@
     <ul
       id="station-results"
       class="station-results"
+      role="listbox"
+      bind:this={resultsList}
       aria-label="Station search results"
       aria-live="polite"
       hidden={!showResults}
     >
       {#if showResults}
-        {#each matches as feature (feature.id)}
-          <li>
+        {#each matches as feature, resultIndex (feature.id)}
+          <li role="presentation">
             <button
+              id={`station-option-${feature.id}`}
               class="station-result"
+              class:is-active={activeResultIndex === resultIndex}
               type="button"
+              role="option"
+              aria-selected={activeResultIndex === resultIndex}
+              tabindex="-1"
+              onmousedown={(event) => event.preventDefault()}
               onclick={() => selectStation(feature)}
             >{feature.properties.NAME}</button>
           </li>
         {:else}
-          <li class="station-no-results">No stations found</li>
+          <li class="station-no-results" role="presentation">No stations found</li>
         {/each}
       {/if}
     </ul>
@@ -142,3 +196,228 @@
     </section>
   </aside>
 </main>
+
+<style>
+  .map-shell {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: min(380px, calc(100vw - 24px));
+    min-height: 0;
+    max-height: calc(100dvh - 24px);
+    padding: 8px;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+
+  .sidebar.is-expanded {
+    gap: 8px;
+    background: rgba(248, 250, 251, 0.97);
+    border-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  }
+
+  .station-search-field {
+    position: relative;
+  }
+
+  .station-search input {
+    width: 100%;
+    height: 48px;
+    padding: 0 44px 0 12px;
+    color: #202a32;
+    font: inherit;
+    background: #fff;
+    border: 1px solid #c8d0d6;
+    border-radius: 8px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  .station-search input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .clear-search {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    display: grid;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    place-items: center;
+    color: #53616a;
+    font: inherit;
+    font-size: 1.35rem;
+    line-height: 1;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .clear-search:hover,
+  .clear-search:focus-visible {
+    color: #15252f;
+    background: #e7edf0;
+    outline: none;
+  }
+
+  .clear-search[hidden] {
+    display: none;
+  }
+
+  .sidebar.is-expanded .station-search input {
+    box-shadow: none;
+  }
+
+  .station-search input:focus-visible {
+    border-color: #087eae;
+    outline: 2px solid #087eae;
+    outline-offset: 2px;
+  }
+
+  .station-results {
+    display: grid;
+    gap: 2px;
+    max-height: min(40vh, 320px);
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+  }
+
+  .station-results[hidden] {
+    display: none;
+  }
+
+  .station-no-results {
+    padding: 10px;
+    color: #56636d;
+    font-size: 0.9rem;
+  }
+
+  .station-result {
+    width: 100%;
+    padding: 9px 10px;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .station-result:hover,
+  .station-result.is-active,
+  .station-result:focus-visible {
+    color: #123745;
+    background: #eebfab;
+    box-shadow: inset 3px 0 0 #ee4800;
+    outline: none;
+  }
+
+  .station-details {
+    min-height: 0;
+    overflow-y: auto;
+    border-top: 1px solid #d5dce1;
+  }
+
+  .station-details-title {
+    margin: 10px 0 6px;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .station-details p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .station-details:empty {
+    display: none;
+  }
+
+  .legend-section {
+    display: none;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid #d5dce1;
+  }
+
+  .legend {
+    display: grid;
+    gap: 0.5rem;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .legend-title {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .legend-list {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .legend-swatch {
+    width: 1.25rem;
+    height: 0.22rem;
+    flex: 0 0 auto;
+    border-radius: 2px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      top: auto;
+      bottom: max(8px, env(safe-area-inset-bottom));
+      left: 8px;
+      width: calc(100vw - 16px);
+      max-height: 70dvh;
+    }
+
+    .station-results {
+      max-height: 32dvh;
+    }
+  }
+</style>
