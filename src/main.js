@@ -1,4 +1,5 @@
 import mapboxgl from "mapbox-gl";
+import { createElement, RotateCcw } from "lucide";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./style.css";
 
@@ -219,12 +220,18 @@ async function fetchGeoJson(fileName, dataLabel) {
   return response.json();
 }
 
+const initialView = {
+  center: [-77.05, 38.95],
+  zoom: 10,
+  bearing: 0,
+  pitch: 0,
+};
+
 const map = new mapboxgl.Map({
   container: mapContainer,
   style: "mapbox://styles/shumayl/cmuvqd3gd007x01s1304r56i4",
   accessToken: import.meta.env.VITE_MAPBOX_ACCESS_TOKEN,
-  center: [-77.05, 38.95],
-  zoom: 10,
+  ...initialView,
 });
 
 const metroDataPromise = Promise.all([
@@ -234,6 +241,41 @@ const metroDataPromise = Promise.all([
 
 metroDataPromise
   .then(([, stations]) => {
+    const resetControl = document.createElement("div");
+    resetControl.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+
+    const resetButton = document.createElement("button");
+    resetButton.type = "button";
+    resetButton.className = "reset-view";
+    resetButton.title = "Reset to original view";
+    resetButton.setAttribute("aria-label", "Reset to original view");
+    const resetIcon = createElement(RotateCcw, {
+      width: 18,
+      height: 18,
+      "aria-hidden": "true",
+    });
+    resetButton.append(resetIcon);
+    resetButton.addEventListener("click", () => {
+      map.flyTo({
+        ...initialView,
+        padding: { top: 0, right: 0, bottom: 0, left: 0 },
+        duration: 900,
+      });
+    });
+    resetControl.append(resetButton);
+
+    map.addControl(
+      {
+        onAdd() {
+          return resetControl;
+        },
+        onRemove() {
+          resetControl.remove();
+        },
+      },
+      "top-right",
+    );
+
     stationSearchInput.addEventListener("input", () => {
       renderStationResults(stations.features, stationSearchInput.value);
       updateClearSearchButton();
@@ -282,7 +324,17 @@ map.on("load", async () => {
       source: "metro-lines",
       paint: {
         "line-color": lineColorExpression,
-        "line-width": 5,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          5,
+          14,
+          3.5,
+          16,
+          3,
+        ],
       },
     });
 
@@ -297,7 +349,17 @@ map.on("load", async () => {
       source: "metro-stations",
       paint: {
         "circle-color": "#ffffff",
-        "circle-radius": 4,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          4,
+          14,
+          3.5,
+          16,
+          3,
+        ],
         "circle-stroke-color": "#202020",
         "circle-stroke-width": 1.5,
       },
