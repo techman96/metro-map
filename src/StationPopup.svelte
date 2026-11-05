@@ -1,5 +1,5 @@
 <script>
-  let { feature, colors, fallbackColor, formatPrice } = $props();
+  let { feature, colors, fallbackColor, formatValue } = $props();
 
   const routeNames = $derived(
     typeof feature.properties?.LINE === "string"
@@ -25,7 +25,12 @@
     {/each}
   </div>
   <hr class="station-popup-divider" />
-  <p class="station-popup-price">Median home value: {formatPrice(feature.properties?.median_sale_price)}</p>
+  <p class="station-popup-price">
+    Median home value:
+    <span class:home-value={typeof feature.properties?.Median_estimated_home_value === "number"}>
+      {formatValue(feature.properties?.Median_estimated_home_value)}
+    </span>
+  </p>
 </div>
 
 <style>
@@ -79,5 +84,9 @@
     margin: 0;
     font-size: 0.88rem;
     line-height: 1.4;
+  }
+
+  .home-value {
+    font-weight: 600;
   }
 </style>

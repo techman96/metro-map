@@ -3,7 +3,7 @@
   import Map, {
     routeColors,
     fallbackLineColor,
-    formatMedianSalePrice,
+    formatMedianHomeValue,
   } from "./Map.svelte";
 
   let searchInput;
@@ -173,7 +173,12 @@
       {#if selectedStation}
         <h2 class="station-details-title">{selectedStation.properties.NAME ?? "Metro station"}</h2>
         <p class="station-details-lines">Lines: {selectedStation.properties.LINE ?? "Not available"}</p>
-        <p class="station-details-price">Median home value: {formatMedianSalePrice(selectedStation.properties.median_sale_price)}</p>
+        <p class="station-details-price">
+          Median home value:
+          <span class:home-value={typeof selectedStation.properties.Median_estimated_home_value === "number"}>
+            {formatMedianHomeValue(selectedStation.properties.Median_estimated_home_value)}
+          </span>
+        </p>
       {/if}
     </section>
 
@@ -347,6 +352,10 @@
     margin: 4px 0;
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+
+  .home-value {
+    font-weight: 600;
   }
 
   .station-details:empty {

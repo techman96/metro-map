@@ -1,6 +1,6 @@
 # Metro Maps
 
-An interactive Washington, DC Metro map built with Svelte 5, Vite, and Mapbox GL JS. Routes are colored by line name. Station popups show served lines and median sale price on hover, with tap support on touch devices. Search selects a station and flies to it; a separate reset button restores the original map view. The generated route legend is currently hidden.
+An interactive Washington, DC Metro map built with Svelte 5, Vite, and Mapbox GL JS. Routes are colored by line name. Station popups show served lines and estimated median home value on hover, with tap support on touch devices. Search selects a station and flies to it; a separate reset button restores the original map view. The generated route legend is currently hidden.
 
 ## Application structure
 
@@ -9,8 +9,8 @@ Station search supports Arrow Down/Up to highlight results, Enter to select the 
 - `index.html`: page metadata and Svelte mount target.
 - `src/entry.js`: mounts the Svelte app and imports the stylesheets.
 - `src/App.svelte`: reactive search, results, selected-station details, clear button, hidden legend, and their scoped styles. The compact search panel sits at the bottom on mobile.
-- `src/Map.svelte`: Mapbox initialization, data loading, layers, popups, camera movement, reset control, and map styles. The map is created in `onMount` and removed when the component unmounts. Shared route colors and the price formatter are module exports used by `App.svelte`.
-- `src/StationPopup.svelte`: station name, served-line swatches, divider, median sale price, and scoped popup styles. Mapbox hosts the component; it is unmounted on popup close, station change, or map teardown.
+- `src/Map.svelte`: Mapbox initialization, data loading, layers, popups, camera movement, reset control, and map styles. The map is created in `onMount` and removed when the component unmounts. Shared route colors and the home-value formatter are module exports used by `App.svelte`.
+- `src/StationPopup.svelte`: station name, served-line swatches, divider, estimated median home value, and scoped popup styles. Mapbox hosts the component; it is unmounted on popup close, station change, or map teardown.
 - `src/style.css`: global typography, box sizing, and document sizing. Mapbox's package stylesheet is imported separately by `src/entry.js`.
 - `vite.config.js`: Svelte plugin and relative deployment base path.
 
@@ -50,7 +50,7 @@ The production site is written to `dist/`.
 The app currently loads these files from `public/data/dc/`:
 
 - `basic-lines.geojson`: route `LineString` features; the `NAME` property identifies each route.
-- `dc-stations.geojson`: station `Point` features; the `NAME`, `LINE`, and `median_sale_price` properties are used by the map and popups.
+- `dc-stations.geojson`: station `Point` features; the `NAME`, `LINE`, and `Median_estimated_home_value` properties are used by the map and popups. The displayed value comes from the estimated home-value field, not `median_sale_price`.
 
 GeoJSON point coordinates must be in `[longitude, latitude]` order. The station file currently contains 96 points, and its geometry coordinates were checked against its `longitude` and `latitude` properties.
 

@@ -9,14 +9,14 @@
   };
   export const fallbackLineColor = "#6B7280";
 
-  export function formatMedianSalePrice(value) {
+  export function formatMedianHomeValue(value) {
     return typeof value === "number"
       ? new Intl.NumberFormat("en-US", {
           style: "currency",
           currency: "USD",
           maximumFractionDigits: 0,
         }).format(value)
-      : "no sales data";
+      : "no home value data";
   }
 </script>
 
@@ -87,7 +87,7 @@
           feature,
           colors: routeColors,
           fallbackColor: fallbackLineColor,
-          formatPrice: formatMedianSalePrice,
+          formatValue: formatMedianHomeValue,
         },
       });
       flushSync();
