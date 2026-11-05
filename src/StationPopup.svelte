@@ -25,7 +25,7 @@
     {/each}
   </div>
   <hr class="station-popup-divider" />
-  <p class="station-popup-price">Median sale price: {formatPrice(feature.properties?.median_sale_price)}</p>
+  <p class="station-popup-price">Median home value: {formatPrice(feature.properties?.median_sale_price)}</p>
 </div>
 
 <style>

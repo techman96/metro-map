@@ -173,7 +173,7 @@
       {#if selectedStation}
         <h2 class="station-details-title">{selectedStation.properties.NAME ?? "Metro station"}</h2>
         <p class="station-details-lines">Lines: {selectedStation.properties.LINE ?? "Not available"}</p>
-        <p class="station-details-price">Median sale price: {formatMedianSalePrice(selectedStation.properties.median_sale_price)}</p>
+        <p class="station-details-price">Median home value: {formatMedianSalePrice(selectedStation.properties.median_sale_price)}</p>
       {/if}
     </section>
 
